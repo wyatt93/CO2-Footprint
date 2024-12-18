@@ -10,7 +10,21 @@
     <link rel="icon" href="src/logo-placeholder-image.png" type="image/x-icon">
 
     <style type="text/css">
-        header div {display: flex;}
+        header div {
+            display: flex;
+            align-items: center;
+        }
+
+        header div img {
+            max-width: 15rem;
+        }
+
+        table td{
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+            
+        }
+        
     </style>
 
 </head>
@@ -47,6 +61,9 @@
             machen und das Bewusstsein für den Schutz unserer Erde stärken.</p>
 
         <h1>Übersicht der weltweit 25 CO² emissionsstärksten Unternehmen</h1>
+
+        <input type="text" id="inputName" onkeyup="" placeholder="Suche nach Unternehmen">
+        <input type="text" id="inputName" onkeyup="" placeholder="Suche nach Land">
 
         <table>
             <thead>
