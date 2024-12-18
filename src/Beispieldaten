@@ -1,0 +1,102 @@
+{
+    "Alpha GmbH": {
+        "Land": "Deutschland",
+        "CO2-Emissionen pro Jahr (Tonnen)": 138285
+    },
+    "Beta Corp": {
+        "Land": "USA",
+        "CO2-Emissionen pro Jahr (Tonnen)": 119641
+    },
+    "Gamma Ltd": {
+        "Land": "China",
+        "CO2-Emissionen pro Jahr (Tonnen)": 270132
+    },
+    "Delta Inc": {
+        "Land": "Indien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 123523
+    },
+    "Epsilon SA": {
+        "Land": "Brasilien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 258090
+    },
+    "Zeta AG": {
+        "Land": "Kanada",
+        "CO2-Emissionen pro Jahr (Tonnen)": 150139
+    },
+    "Eta LLC": {
+        "Land": "Russland",
+        "CO2-Emissionen pro Jahr (Tonnen)": 271592
+    },
+    "Theta PLC": {
+        "Land": "Japan",
+        "CO2-Emissionen pro Jahr (Tonnen)": 54248
+    },
+    "Iota BV": {
+        "Land": "Australien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 108200
+    },
+    "Kappa Co": {
+        "Land": "Frankreich",
+        "CO2-Emissionen pro Jahr (Tonnen)": 296462
+    },
+    "Lambda GmbH": {
+        "Land": "Italien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 95766
+    },
+    "Mu Corp": {
+        "Land": "Spanien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 91735
+    },
+    "Nu Ltd": {
+        "Land": "Mexiko",
+        "CO2-Emissionen pro Jahr (Tonnen)": 262428
+    },
+    "Xi Inc": {
+        "Land": "Südafrika",
+        "CO2-Emissionen pro Jahr (Tonnen)": 121493
+    },
+    "Omicron SA": {
+        "Land": "Südkorea",
+        "CO2-Emissionen pro Jahr (Tonnen)": 222700
+    },
+    "Pi AG": {
+        "Land": "Indonesien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 283365
+    },
+    "Rho LLC": {
+        "Land": "Türkei",
+        "CO2-Emissionen pro Jahr (Tonnen)": 118214
+    },
+    "Sigma PLC": {
+        "Land": "Saudi-Arabien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 115000
+    },
+    "Tau BV": {
+        "Land": "Argentinien",
+        "CO2-Emissionen pro Jahr (Tonnen)": 92788
+    },
+    "Upsilon Co": {
+        "Land": "Vereinigtes Königreich",
+        "CO2-Emissionen pro Jahr (Tonnen)": 236199
+    },
+    "Phi GmbH": {
+        "Land": "Nigeria",
+        "CO2-Emissionen pro Jahr (Tonnen)": 177439
+    },
+    "Chi Corp": {
+        "Land": "Ägypten",
+        "CO2-Emissionen pro Jahr (Tonnen)": 140132
+    },
+    "Psi Ltd": {
+        "Land": "Vietnam",
+        "CO2-Emissionen pro Jahr (Tonnen)": 158032
+    },
+    "Omega Inc": {
+        "Land": "Thailand",
+        "CO2-Emissionen pro Jahr (Tonnen)": 176947
+    },
+    "Zeta SA": {
+        "Land": "Malaysia",
+        "CO2-Emissionen pro Jahr (Tonnen)": 154539
+    }
+}
