@@ -1,0 +1,26 @@
+html {
+    background-color: #dedcff;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    max-width: 15rem;
+}
+
+header div h1 {
+    color: black;
+}
+
+header nav ul button {
+    margin: 0.2rem;
+}
+
+table td{
+    padding: 1rem;
+    border-bottom: 1px solid #000000;
+    
+}
