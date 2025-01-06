@@ -8,11 +8,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 
-    <title>CO²-Footprint</title>
+    <title>CO²-Footprint Watch</title>
     <!--Logo to be implemented-->
-    <link rel="shortcut icon" href="src/logo-placeholder-image.png">
+    <link rel="shortcut icon" href="src/Logo_Footprint.png">
 
 </head>
+
 
 <body>
     <header>
@@ -25,13 +26,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active text-light" aria-current="page" href="https://www.facebook.com">Facebook</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Pricing</a>
+                    <a class="nav-link text-light" href="https://www.instagram.com">Instagram</a>
                   </li>
                 </ul>
               </div>
@@ -39,31 +37,54 @@
           </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-        <ul class="nav">
+        <div class="row" dir="auto">
+            <ul class="nav">
             <a class="nav-link text-success" href="#about">Über uns</a>
             <a class="nav-link text-success" href="#overview">Übersich</a>
             <a class="nav-link text-success" href="#dataprotection">Datenschutz</a>
             <a class="nav-link text-success" href="#imprint">Impressum</a>
         </ul>
+        </div>
+        
 
-        <h1 id="about" class="text-success">Über uns</h1>
-        <p>CO²-Footprint Watch NGO widmet sich der Transparenz über die jährlichen CO² Emissionen weltweiter
-            Unternehmen. Mit Hilfe dieser übersicht möchten wir auf besonders CO² belastende Unternehmen aufmerksam
-            machen und das Bewusstsein für den Schutz unserer Erde stärken.</p>
+        <div class="row">
+            <div class="col-sm">
+                <h1 id="about" class="text-success">Über uns</h1>
+            </div>
+        </div>
 
-        <h1 id="overview" class="text-success">Übersicht der weltweit 25 CO² emissionsstärksten Unternehmen</h1>
+        <div class="row">
+            <div class="col-sm">
+                <p>CO²-Footprint Watch NGO widmet sich der Transparenz über die jährlichen CO² Emissionen weltweiter
+                    Unternehmen. Mit Hilfe dieser übersicht möchten wir auf besonders CO² belastende Unternehmen aufmerksam
+                    machen und das Bewusstsein für den Schutz unserer Erde stärken.</p>
+            </div>
+        </div>
 
-        <input type="text" id="inputName" onkeyup="" placeholder="Suche nach Unternehmen">
-        <input type="text" id="inputName" onkeyup="" placeholder="Suche nach Land">
+        <div class="row">
+            <div class="col-sm">
+                <h1 id="overview" class="text-success">Übersicht der weltweit 25 CO² emissionsstärksten Unternehmen</h1>
+            </div>
+        </div>
 
-        <table class="table">
+        <div class="row">
+            <div class="col-sm">
+                <input type="text" id="inputByName" onkeyup="searchByCompany()" placeholder="Suche nach Unternehmen">
+            </div>
+
+            <div class="col-sm">
+                <input type="text" id="inputByCountry" onkeyup="searchByCountry()" placeholder="Suche nach Land">
+            </div>
+        </div>
+
+        <table id="myTable" class="table">
             <thead>
                 <tr>
-                    <th scope="col" class="text-success">Unternehmen</th>
-                    <th scope="col" class="text-success">Land</th>
-                    <th scope="col" class="text-success">CO2-Emissionen pro Jahr (Tonnen)</th>
+                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">Unternehmen <span class="icon-arrow">&UpArrow;</span></button></th>
+                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">Land <span class="icon-arrow">&UpArrow;</span></button></th>
+                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">CO2-Emissionen/Jahr (Tonnen) <span class="icon-arrow">&UpArrow;</span></button></th>
                 </tr>
             </thead>
             <tbody>
@@ -198,6 +219,8 @@
         <h1 id="dataprotection" class="text-success">Datenschutz</h1>
 
         <p>
+
+            
 <b>Einleitung</b><br>
 
 Willkommen bei CO² Footprint Watch NGO. Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. In diesem Datenschutzhinweis informieren wir Sie darüber, wie wir Ihre Daten erheben, verarbeiten und nutzen.<br><br>
@@ -219,7 +242,7 @@ Wir erheben und verarbeiten Ihre personenbezogenen Daten nur, wenn Sie uns diese
     
 <b>Zwecke der Datenverarbeitung</b><br>
 
-Ihre personenbezogenen Daten werden zu folgenden Zwecken verarbeitet:
+Ihre personenbezogenen Daten werden zu folgenden Zwecken verarbeitet:<br><br>
 <ul>
     <li>Beantwortung Ihrer Anfragen</li>
     <li>Versand unseres Newsletters</li>
@@ -230,7 +253,7 @@ Ihre personenbezogenen Daten werden zu folgenden Zwecken verarbeitet:
     
 <b>Rechtsgrundlagen der Verarbeitung</b><br>
 
-Die Verarbeitung Ihrer Daten erfolgt auf Basis folgender Rechtsgrundlagen:
+Die Verarbeitung Ihrer Daten erfolgt auf Basis folgender Rechtsgrundlagen:<br><br>
 
 <ul>
     <li>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>
@@ -240,7 +263,7 @@ Die Verarbeitung Ihrer Daten erfolgt auf Basis folgender Rechtsgrundlagen:
   
 <b>Weitergabe von Daten</b><br>
 
-Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn dies zur Erfüllung unserer Aufgaben notwendig ist oder Sie ausdrücklich eingewilligt haben. Mögliche Empfänger sind:
+Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, wenn dies zur Erfüllung unserer Aufgaben notwendig ist oder Sie ausdrücklich eingewilligt haben. Mögliche Empfänger sind:<br><br>
 
 <ul>
     <li>Dienstleister für den Versand von Newslettern</li>
@@ -287,6 +310,51 @@ CO² Footprint Watch NGO Musterstraße 1 12345 Musterstadt, E-Mail: datenschutz@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
 
+
+    <script>
+    
+        function searchByCompany() {
+            var input = document.getElementById("inputByName");
+            var filter = input.value.toUpperCase();
+            var table = document.getElementById("myTable");
+            var tr = table.getElementsByTagName("tr");
+        
+            for (i = 0; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName("td")[0];
+        
+                if (td) {
+                    var txtValue = td.textContent || td.innerText;
+                    if(txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+        
+
+        function searchByCountry() {
+            var input = document.getElementById("inputByCountry");
+            var filter = input.value.toUpperCase();
+            var table = document.getElementById("myTable");
+            var tr = table.getElementsByTagName("tr");
+
+            for (i = 0; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName("td")[1];
+        
+                if (td) {
+                    var txtValue = td.textContent || td.innerText;
+                    if(txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        </script>
+</body>
 </html>
