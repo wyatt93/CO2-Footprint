@@ -82,9 +82,9 @@
         <table id="myTable" class="table">
             <thead>
                 <tr>
-                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">Unternehmen <span class="icon-arrow">&UpArrow;</span></button></th>
-                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">Land <span class="icon-arrow">&UpArrow;</span></button></th>
-                    <th scope="col" class="text-success"><button type="button" class="btn btn-success">CO2-Emissionen/Jahr (Tonnen) <span class="icon-arrow">&UpArrow;</span></button></th>
+                    <th scope="col" class="text-success">Unternehmen <span class="icon-arrow">&UpArrow;</span></th>
+                    <th scope="col" class="text-success">Land <span class="icon-arrow">&UpArrow;</span></th>
+                    <th scope="col" class="text-success">CO2-Emissionen/Jahr (Tonnen) <span class="icon-arrow">&UpArrow;</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -312,49 +312,6 @@ CO² Footprint Watch NGO Musterstraße 1 12345 Musterstadt, E-Mail: datenschutz@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
-    <script>
-    
-        function searchByCompany() {
-            var input = document.getElementById("inputByName");
-            var filter = input.value.toUpperCase();
-            var table = document.getElementById("myTable");
-            var tr = table.getElementsByTagName("tr");
-        
-            for (i = 0; i < tr.length; i++) {
-                var td = tr[i].getElementsByTagName("td")[0];
-        
-                if (td) {
-                    var txtValue = td.textContent || td.innerText;
-                    if(txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-        
-
-        function searchByCountry() {
-            var input = document.getElementById("inputByCountry");
-            var filter = input.value.toUpperCase();
-            var table = document.getElementById("myTable");
-            var tr = table.getElementsByTagName("tr");
-
-            for (i = 0; i < tr.length; i++) {
-                var td = tr[i].getElementsByTagName("td")[1];
-        
-                if (td) {
-                    var txtValue = td.textContent || td.innerText;
-                    if(txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-
-        </script>
+    <script src="src/script.js"></script>
 </body>
 </html>
