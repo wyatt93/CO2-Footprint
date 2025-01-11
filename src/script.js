@@ -18,7 +18,6 @@ function searchByCompany() {
     }
 }
 
-
 function searchByCountry() {
     var input = document.getElementById("searchInput");
     var filter = input.value.toUpperCase();
@@ -39,8 +38,9 @@ function searchByCountry() {
     }
 }
 
+//listener um zwischen Suche nach Unternehmen und Land zu wechseln
 var search = document.getElementById("inputGroupSelect");
-    search.addEventListener("change", searchFunction());
+    search.addEventListener("change", searchFunction);
 
 function searchFunction() {
     
@@ -52,4 +52,13 @@ function searchFunction() {
         searchByCountry();
     }
 
+}
+
+//Navbarverlauf ändern, abhängig ob Deutsch oder Arabisch gewählt ist, links oder rechts
+function languageSetterGer(){
+    document.dir = "ltr"
+}
+
+function languageSetterArab(){
+    document.dir = "rtl";
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" dir="ltr">
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
 
 
     <title>CO²-Footprint Watch</title>
-    <link rel="shortcut icon" href="src/Logo_Footprint.png">
+    <link rel="shortcut icon" href="src/bilder/Logo_Footprint.png">
 
 </head>
 
@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-success">
             <div class="container-fluid">
-                <a class="navbar-brand text-light" href="#"><img src="src/Logo_Footprint.png" alt="Logo"
+                <a class="navbar-brand text-light" href="#"><img src="src/bilder/Logo_Footprint.png" alt="Logo"
                         width="50">Co²-Footprint Watch</a>
                 <button class="navbar-toggler" style="border-color: rgb(255, 255, 255)" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
@@ -40,6 +40,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="https://www.instagram.com">Instagram</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link text-light" onclick="languageSetterGer()" href="#"><img src="src/bilder/deutschland.png" width="25"></a></li>
+                        <li class="nav-item"><a class="nav-link text-light" onclick="languageSetterArab()" href="#"><img src="src/bilder/vereinigte-arabische-emirate.png" width="25"></a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +51,7 @@
     <!--Navigation über die Seite-->
     <main class="container">
 
-        <div class="row" dir="auto">
+        <div id="siteNav" class="row">
             <ul class="nav">
                 <a class="nav-link text-success" href="#about">Über uns</a>
                 <a class="nav-link text-success" href="#overview">Übersich</a>
@@ -90,7 +92,7 @@
             </select>
             <input type="text" id="searchInput" class="form-control" onkeyup="searchFunction()" aria-label="Text input with dropdown button" placeholder="Suche">
           </div>
-
+        </div>
         <!--Tabelle mit Beispieldaten-->
         <table id="myTable" data-toggle="table">
             <thead>
@@ -326,6 +328,7 @@
         <ul class="nav">
             <a class="nav-link text-success" href="#dataprotection">Datenschutz</a>
             <a class="nav-link text-success" href="#imprint">Impressum</a>
+            <li class="nav-link text-secondary">&copy 2025 Fabian Meixner</li>
         </ul>
     </footer>
 
