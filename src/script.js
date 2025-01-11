@@ -1,5 +1,5 @@
 function searchByCompany() {
-    var input = document.getElementById("inputByName");
+    var input = document.getElementById("searchInput");
     var filter = input.value.toUpperCase();
     var table = document.getElementById("myTable");
     var tr = table.getElementsByTagName("tr");
@@ -20,7 +20,7 @@ function searchByCompany() {
 
 
 function searchByCountry() {
-    var input = document.getElementById("inputByCountry");
+    var input = document.getElementById("searchInput");
     var filter = input.value.toUpperCase();
     var table = document.getElementById("myTable");
     var tr = table.getElementsByTagName("tr");
@@ -37,4 +37,19 @@ function searchByCountry() {
             }
         }
     }
+}
+
+var search = document.getElementById("inputGroupSelect");
+    search.addEventListener("change", searchFunction());
+
+function searchFunction() {
+    
+    var choice = document.getElementById("inputGroupSelect").value;
+
+    if (choice == "1") {
+        searchByCompany();
+    } else if (choice == "2") {
+        searchByCountry();
+    }
+
 }
