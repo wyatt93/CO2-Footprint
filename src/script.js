@@ -1,14 +1,14 @@
 function searchByCompany() {
-    var input = document.getElementById("searchInput");
-    var filter = input.value.toUpperCase();
-    var table = document.getElementById("myTable");
-    var tr = table.getElementsByTagName("tr");
+    let input = document.getElementById("searchInput");
+    let filter = input.value.toUpperCase();
+    let table = document.getElementById("myTable");
+    let tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
-        var td = tr[i].getElementsByTagName("td")[0];
+        let td = tr[i].getElementsByTagName("td")[0];
 
         if (td) {
-            var txtValue = td.textContent || td.innerText;
+            let txtValue = td.textContent || td.innerText;
             if(txtValue.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
             } else {
@@ -19,16 +19,16 @@ function searchByCompany() {
 }
 
 function searchByCountry() {
-    var input = document.getElementById("searchInput");
-    var filter = input.value.toUpperCase();
-    var table = document.getElementById("myTable");
-    var tr = table.getElementsByTagName("tr");
+    let input = document.getElementById("searchInput");
+    let filter = input.value.toUpperCase();
+    let table = document.getElementById("myTable");
+    let tr = table.getElementsByTagName("tr");
 
     for (i = 0; i < tr.length; i++) {
-        var td = tr[i].getElementsByTagName("td")[1];
+        let td = tr[i].getElementsByTagName("td")[1];
 
         if (td) {
-            var txtValue = td.textContent || td.innerText;
+            let txtValue = td.textContent || td.innerText;
             if(txtValue.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
             } else {
@@ -44,7 +44,7 @@ var search = document.getElementById("inputGroupSelect");
 
 function searchFunction() {
     
-    var choice = document.getElementById("inputGroupSelect").value;
+    let choice = document.getElementById("inputGroupSelect").value;
 
     if (choice == "1") {
         searchByCompany();
